@@ -1,0 +1,8 @@
+__init__() to specjalna funkcja która wywoływana jest przy tworzeniu instancji klasy - można sobie w niej stworzyć
+potrzebne w programie zmienne, dodać jakiś kod który ma być wykonany za każdym razem gdy tworzymy nowy obiekt klasy.
+
+Ważne: __init__ zawsze wywołuje się gdy stworze obiekt tej klasy, czyli w init moge sobie dac kod ktory zawsze
+        ma sie wykonac po stworzeniu obiektu.
+
+self - to taka "zmienna globalna" która (gdy zostanie zdefiniowana) staje się "widoczna" w każdej metodzie klasy
+(głównie za sprawą tego że jest pierwszym argumentem każdej funkcji/metody w ramach klasy).
