@@ -16,8 +16,15 @@ class SauceDemoHomePage(BasePage):
 
 
     def expanding_menu_burger(self):
-        burger = self.driver.find_element(By.CSS_SELECTOR, self.burger_locator)
+        burger = self.driver.find_element_by_css_selector(self.burger_locator)
         burger.click()
+        self.wait_until_visibility(self.menu)
+
+    def clicking_logout_from_menu(self):
+        button = self.driver.find_element_by_css_selector(self.button_logout)
+        button.click()
+        self.wait_until_visibility(self.login_wrapper)
+
 
 
 

@@ -12,7 +12,7 @@ class TestSouceDemo:
     def test_burger(self):
         page = SauceDemoHomePage(self.driver)
         page.expanding_menu_burger()
-        time.sleep(2)
+
 
         
 
