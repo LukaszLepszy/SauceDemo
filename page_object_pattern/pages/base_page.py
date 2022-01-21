@@ -1,3 +1,4 @@
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 from selenium.webdriver.support.wait import WebDriverWait
@@ -22,7 +23,10 @@ class BasePage(HomePageLocators):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located)
 
     def find_by_css_selector(self, by_locator):
-        return self.driver.find_element_by_css_selector(by_locator)
+        return self.driver.find_element(By.CSS_SELECTOR, by_locator)
 
     def find_by_xpath_selector(self, by_locator):
-        return self.driver.find_element_by_xpath(by_locator)
+        return self.driver.find_element_by_xpath_selector(by_locator)
+
+    def find_by_name(self, by_locator):
+        return self.driver.find_element(By.NAME, by_locator)

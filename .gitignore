@@ -7,7 +7,7 @@ __pycache__/
 # C extensions
 *.so
 
-# Distribution / packaging
+# Distriburebase co to znaczytion / packaging
 .Python
 build/
 develop-eggs/
@@ -137,4 +137,5 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
 
