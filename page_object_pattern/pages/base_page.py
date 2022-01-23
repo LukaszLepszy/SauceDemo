@@ -32,6 +32,6 @@ class BasePage(HomePageLocators):
         return self.driver.find_element(By.NAME, by_locator)
 
     def get_atribute(self, atribute_name, path):
-        element = self.driver.find_element_by_css_selector(path)
+        element = self.driver.find_element(By.CSS_SELECTOR, path)
         text = element.get_attribute(atribute_name)
         return text

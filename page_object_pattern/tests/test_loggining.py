@@ -64,8 +64,10 @@ class TestLoggining:
         menu_tolbar.expanding_menu_burger()
         menu_tolbar.clicking_logout_from_menu()
         atribute = BasePage(self.driver)
-        value = atribute.get_atribute("value", HomePageLocators.input_login_name)
-        assert value == ""
+        login_value = atribute.get_atribute("value", HomePageLocators.input_login_selecotor)
+        password_value = atribute.get_atribute("value", HomePageLocators.input_password_selector)
+        assert login_value == "s"
+        assert password_value == ""
 
 
     # @pytest.mark.parametrize("login", HomePageLocators.logins)
