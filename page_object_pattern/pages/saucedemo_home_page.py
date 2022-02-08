@@ -11,8 +11,7 @@ class SauceDemoHomePage(BasePage):
 
     def __init__(self, driver):
         self.driver = driver
-        super().__init__(driver) # Konstruktor odwołuje się do klasy nadrzędnej, dodaje ją tutaj i wtedy nie musze
-                                            # wpisywac za kazdym razem konstruktora gdy bede chcial wywolac metodę
+        super().__init__(driver)
 
 
     def expanding_menu_burger(self):
@@ -35,8 +34,3 @@ class SauceDemoHomePage(BasePage):
 
 
 
-# driver = webdriver.Chrome(ChromeDriverManager().install())
-# driver.get("http://www.google.pl")
-# driver.maximize_window()
-# driver.close()
-# driver.quit()

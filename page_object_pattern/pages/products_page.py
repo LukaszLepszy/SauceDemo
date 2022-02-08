@@ -31,6 +31,26 @@ class ProductsPage(BasePage):
             products_price_list.append(x.text)
         return products_price_list
 
+    def add_product_to_shop(self, locator):
+        self.wait_until_visibility(locator)
+        product = self.driver.find_element_by_xpath(locator)
+        product.click()
+        self.wait_until_visibility(HomePageLocators.icon_shop_with_red_caunter)
+        button_remove = self.driver.find_element_by_xpath(locator)
+        button_remove = button_remove.text
+        return button_remove
+
+    def clicking_in_remove_button(self):
+        self.wait_until_visibility(self.remove_button_in_shop)
+        element = self.driver.find_element_by_css_selector(self.remove_button_in_shop)
+        element.click()
+        self.wait_until_invisibility(self.icon_shop_with_red_caunter)
+        add_button = self.driver.find_element_by_xpath(self.backpack_produkt)
+        add_button = add_button.text
+        return add_button
+
+
+
 
 
 

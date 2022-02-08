@@ -17,6 +17,31 @@ class HomePageLocators:
     products_list = "div[class='inventory_list']"
     product_name = "div[class='inventory_item_name']"
     product_price = "div[class='inventory_item_price']"
+        #Shop
+    icon_shop = "div[id='shopping_cart_container']"  #Moze nie byc dobry sprawdzic pierw
+    icon_shop_with_red_caunter = "span[class='fa-layers-counter shopping_cart_badge']"
+    backpack_produkt = "//*[@id='inventory_container']/div/div[1]/div[3]/button"
+    product_cart = "div[class='cart_item']"
+    product_cart_item_name = "div[class='inventory_item_name']"
+    product_cart_item_price = "div[class='inventory_item_price']"
+    remove_button_in_basket = "button[class='btn_secondary cart_button']"
+    removed_item_cart = "div[class='removed_cart_item']"
+    remove_button_in_shop = "button[class='btn_secondary btn_inventory']"
+    button_continue_shopping = "a[class='btn_secondary']"
+    button_checkout = "a[class='btn_action checkout_button']"
+    checkout_info = "div[class='checkout_info']"
+
+        #Checkout
+    error_notyfication_checkout = "h3[data-test='error']"
+    input_first_name = "input[id='first-name']"
+    input_last_name = "input[id='last-name']"
+    input_zip_code = "input[id='postal-code']"
+    button_continue_checkout = "input[class='btn_primary cart_button']"
+        #Orders
+    button_finish = "a[class='btn_action cart_button']"
+    price = "div[class='inventory_item_price']"
+    name = "div[class='inventory_item_name']"
+    complete_container = "div[id='checkout_complete_container']"
 
     #constants
         #Login Page

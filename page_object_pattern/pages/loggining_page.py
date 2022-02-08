@@ -40,3 +40,4 @@ class LogginingPage(BasePage):
         self.send_login("standard_user")
         self.send_password()
         self.submit()
+

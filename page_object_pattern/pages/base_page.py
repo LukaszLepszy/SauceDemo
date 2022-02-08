@@ -23,7 +23,7 @@ class BasePage(HomePageLocators):
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located)
 
     def find_by_css_selector(self, by_locator):
-        return self.driver.find_element(By.CSS_SELECTOR, by_locator)
+        return self.driver.find_element_by_css_selector(by_locator)
 
     def find_by_xpath_selector(self, by_locator):
         return self.driver.find_element_by_xpath_selector(by_locator)
